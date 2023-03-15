@@ -1,6 +1,11 @@
 ---
 import App from "../components/App";
+import Nav from "../components/Nav.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<div>ok</div>
-<App client:visible />
+<Layout>
+  <Nav />
+  <div>ok</div>
+  <App client:visible />
+</Layout>
